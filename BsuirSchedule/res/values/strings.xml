@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Расписание БГУИР</string>
+    <string name="add_new_schedule_button_label">Добавить новое расписание&#8230;</string>
+    <string name="empty_sched_list_label">Список расписаний пуст.</string>
+    <string name="schedules_list_item_update_date_label">Обновлено:</string>
+    <string name="schedule_loaded_successfully">Расписание успешно загружено.</string>
+    <string name="schedule_not_updated">Расписание не требует обновления.</string>
+    <string name="schedule_not_found">Расписание не найдено.</string>
+    <string name="schedule_load_failed">Ошибка при загрузке расписания.</string>
+    <string name="group_name_is_invalid">Неверный номер группы.</string>
+    <string name="add_schedule_dialog_title">Добавить расписание</string>
+    <string name="add_schedule_dialog_message">Введите номер группы:</string>
+    <string name="add_schedule_dialog_go_button">Искать</string>
+    <string name="add_schedule_dialog_cancel_button">Отмена</string>
+    <string name="schedule_loading_dialog_message">Поиск расписания&#8230;</string>
+    <string name="choose_schedule_menu_label">Сменить расписание&#8230;</string>
+    <string name="settings_menu_label">Настройки&#8230;</string>
+    <string name="lesson_param_auditorium">ауд.</string>
+    <string name="lesson_param_subgroups">подгр.</string>
+    <string name="lesson_param_weeks">нед.</string>
+    <string name="lessons_list_header_today_label">Сегодня: %1$s, %2$s, %3$d уч. неделя</string>
+    <string name="lessons_list_header_group_label">Группа: %1$s</string>
+    <string-array name="week_days">
+        <item >понедельник</item>
+        <item >вторник</item>
+        <item >среда</item>
+        <item >четверг</item>
+        <item >пятница</item>
+        <item >суббота</item>
+        <item >воскресенье</item>
+    </string-array>
+    <string name="week_day_today">сегодня</string>
+    <string name="week_day_tomorrow">завтра</string>
+    
+    <string name="pref_current_subgroup">Подгруппа</string>
+    <string name="pref_current_subgroup_summ">Используется для фильтрации расписания по подгруппе</string>
+    <string name="pref_current_subgroup_dialog_title">Выбор подгруппы&#8230;</string>
+    <string-array name="pref_current_subgroup_entries">
+        <item >Все подгруппы</item>
+        <item >1 подгруппа</item>
+        <item >2 подгруппа</item>
+    </string-array>
+    
+    <string name="schedule_context_menu_title">Группа %1$s</string>
+    <string name="update_schedule_menu_label">Обновить расписание</string>
+    
+</resources>

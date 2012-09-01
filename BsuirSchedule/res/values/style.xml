@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="main_window_color">#fff</color>
+
+    <style name="MainTheme" parent="@android:Theme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/main_window_color</item>
+    </style>
+
+</resources>
