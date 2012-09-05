@@ -227,7 +227,7 @@ public class LessonsListActivity extends Activity {
             }
             
             private String loadSchedId() {
-                Cursor cursor = db.query(Schedule.TABLE_NAME, null, String.format("%s = %s", Schedule.GROUP_ATTR, currentGroup), null, null, null, null);
+                Cursor cursor = db.query(Schedule.TABLE_NAME, null, String.format("%s = '%s'", Schedule.GROUP_ATTR, currentGroup), null, null, null, null);
                 cursor.moveToFirst();
                 String schedId = cursor.getString(0);
                 cursor.close();
