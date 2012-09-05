@@ -24,6 +24,7 @@ import android.preference.PreferenceManager;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -33,6 +34,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 public class LessonsListActivity extends Activity {
+    private static final String TAG = "LessonsListActivity";
     public static final String GROUP_NAME_EXTRA = "groupName";
     public static final String CURRENT_GROUP_BUNDLE_KEY = "currentGroup";
     
@@ -137,7 +139,11 @@ public class LessonsListActivity extends Activity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        dbHelper.close();
+        try {
+            dbHelper.close();
+        } catch (SQLException e) {
+            Log.e(TAG, "can't close db connection " + e.getMessage());
+        }
     }
     
     @Override
